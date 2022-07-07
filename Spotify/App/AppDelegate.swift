@@ -15,9 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let window = UIWindow(frame: UIScreen.main.bounds)
     window.rootViewController = UINavigationController(rootViewController: TitleViewController())
-    window.backgroundColor = .systemBackground
+    window.backgroundColor = .spotifyBlack
     window.makeKeyAndVisible()
     self.window = window
+    UINavigationBar.appearance().isTranslucent = false
+    UINavigationBar.appearance().barTintColor = .spotifyBlack
     return true
   }
 }
